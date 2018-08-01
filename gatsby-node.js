@@ -25,6 +25,7 @@
           }
           result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             const path = node.frontmatter.path
+
             createPage({
               path,
               component: blogPostTemplate,
